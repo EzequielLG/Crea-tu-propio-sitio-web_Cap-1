@@ -1,1 +1,1 @@
-# -Crea-tu-propia-p-gina-web---Cap-tulo-1
+# Este proyecto cuenta con licencia conforme a los términos de la licencia MIT
