@@ -1,0 +1,149 @@
+<!--
+¿Por qué 'index' y no otro nombre?
+
+Los servidores web y locales actúan bajo una configuración estándar;
+buscan el archivo 'index'.html/.php/ etc., y si no lo encuentran
+simplemente no tienen forma de saber qué archivo abrir en caso de
+que la carpeta no se encuentre vacía.
+
+NOTA: La configuración se puede cambiar para que por defecto el servidor
+busque a un archivo con un nombre distinto a 'index' para abrir.
+NOTA: Mientras la página no se encuentre en un servidor web ni se use
+un servidor local, el nombre de 'index' puede modificarse con libertad,
+puesto que, al no regirse por la configuración de un servidor, basta con
+dar doble clic en el archivo .html para abrirlo como página web sin importar
+el nombre del mismo.
+-->
+
+<!--
+Definición: HTML Hypertext Markup Language (Lenguaje de marcado de hipertexto)
+-->
+
+<!DOCTYPE html> <!-- HTML5 -->
+
+<html>
+
+  <head> <!-- Cabecera: información acerca de la página -->
+
+    <!-- Caracteres especiales del español latino -->
+    <meta charset = "utf-8"> <!-- 'meta'data: describe el contenido de la página -->
+
+    <link rel = icon href = "icono.ico"> <!-- Ícono del sitio web -->
+
+    <title> LozanoSoft </title> <!-- Título de la página -->
+
+    <!-- Hojas de estilo - CSS: Cascading Style Sheets -->
+    <!-- <link rel = "stylesheet" href = "css/estilo.css"> -->
+    <!-- Fin -->
+
+  </head>
+
+  <body bgcolor = "#AABDEB"> <!-- Cuerpo de la página -->
+
+    <!-- Tipos de encabezado -->
+    <!-- NOTA: la etiqueta 'h' viene de header -->
+
+    <h1> ¡Bienvenidos!, este es el encabezado más grande: h1 </h1>
+    <br> <!-- Line 'br'eak -> salto de línea -->
+    <h2> Encabezado h2 </h2>
+    <br>
+    <h3> Encabezado h3 </h3>
+    <br>
+    <h4> Encabezado h4 </h4>
+    <br>
+    <h5> Encabezado h5 </h5>
+    <br>
+    <h6> Encabezado h6 </h6>
+
+    <!-- Párrafo -->
+
+    <p>
+      Este es un párrafo; para hacerlo ocupé la etiqueta 'p',
+      la cual surge de 'p'aragraph en inglés.
+    </p>
+
+    <!-- Estilos de texto -->
+
+    <!-- Negritas -->
+
+    <b>
+
+      <p>
+
+        Este es un texto en negritas, utlizando la etiqueta 'b',
+        que viene de 'b'old.
+
+      </p>
+
+    </b>
+
+    <hr> <!-- 'h'orizontal 'r'ule -> línea horizontal (sirve como separador) -->
+
+    <!-- Cursiva -->
+
+    <i>
+
+      <p>
+        Este es un texto en cursiva, utlizando la etiqueta 'i',
+        que viene de 'i'talic.
+      </p>
+
+    </i>
+
+    <hr>
+
+    <!-- Color, tamaño y fuente de texto -->
+
+    <!--
+      color = "#RRGGBB" size = "absoluto: 1-7, relativo: px" face = "nombre de la fuente"
+
+      Nota: el color al ser hexadecimal, para cada par de tono: RGB
+      va desde el valor 00 (0 en decimal), hasta el FF (255 en decimal);
+
+      #000000 -> negro
+      #FFFFFF -> blanco
+    -->
+
+    <font color = "#667CB6" size = "7" face = "Verdana">
+      Este texto está 100% personalizado, a través de la etiqueta font:
+      fuente de texto.
+    </font>
+
+    <hr>
+
+    <!-- Integración completa -->
+
+    <!--
+    'div'ision -> división: crea una nueva sección en la página
+    'align' -> alinea texto: izquierda, derecha, centro o justificado
+    -->
+
+    <div align = "center" style = "background-color: #000000;">
+
+      <font color = "#BC164C" style = "font-size: 50px;" face = "Impact">
+        Este texto está 100% personalizado, a través de la etiqueta font:
+        fuente de texto.
+      </font>
+
+    </div>
+
+    <br>
+
+    <!-- Inserción de imagen -->
+
+    <!--
+    'im'a'g'e -> imagen
+    's'ou'rc'e -> fuente/ruta
+    'h'orizontal 'space' -> espacio horizontal
+    'v'ertical 'space' -> espacio vertical
+    'alt'ernative text -> texto alternativo: cuando la imagen no se puede mostrar
+    -->
+
+    <center>
+      <img src = "img/imagen.jpg" alt = "Descripción de la imagen" title = "Título de la imagen "
+      width = "450px" border = "5px" hspace = "10px" vspace = "10px"/>
+    </center>
+
+  </body>
+
+</html>
